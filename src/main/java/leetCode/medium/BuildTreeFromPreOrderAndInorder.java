@@ -1,4 +1,4 @@
-package tree;
+package leetCode.medium;
 
 import java.util.HashMap;
 import java.util.Map;
