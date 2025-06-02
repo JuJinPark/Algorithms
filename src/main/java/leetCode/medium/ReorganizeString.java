@@ -5,9 +5,9 @@ import java.util.*;
 public class ReorganizeString {
 
     public static void main(String[] args) {
-        new Solution1().reorganizeString("aab");
-        new Solution2().reorganizeString("aab");
-        new Solution3().reorganizeString("aab");
+        new ReorganizeStringSolution1().reorganizeString("aab");
+        new ReorganizeStringSolution2().reorganizeString("aab");
+        new ReorganizeStringSolution3().reorganizeString("aab");
 
     }
 }
@@ -15,7 +15,7 @@ public class ReorganizeString {
 /**
  * not working (wrong approach)
  */
-class Solution1 {
+class ReorganizeStringSolution1 {
     public String reorganizeString(String s) {
         HashMap<String, ReorganizeStringNode> map = new HashMap();
 
@@ -77,7 +77,7 @@ class Solution1 {
  * sc - n + n + n  - o(n)
  */
 
-class Solution2 {
+class ReorganizeStringSolution2 {
     public String reorganizeString(String s) {
 
         return this.recur(s, new String[s.length()], new HashSet(), 0);
@@ -115,7 +115,7 @@ class Solution2 {
  * tc - n + k log k + n * log k = n log k
  * sc - n + k + n = n +k
  */
-class Solution3 {
+class ReorganizeStringSolution3 {
     public String reorganizeString(String s) {
         HashMap<String, ReorganizeStringNode> map = new HashMap();
 
